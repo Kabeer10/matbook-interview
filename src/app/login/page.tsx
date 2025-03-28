@@ -24,6 +24,7 @@ export default async function Login() {
             alt="HighBridge Logo"
             width={273.66}
             height={64}
+            className="mt-28"
           />
           <div className="font-zen my-auto w-full max-w-sm">
             <h2 className="text-[39.06px] font-bold">Building the Future...</h2>
