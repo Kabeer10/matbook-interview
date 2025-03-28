@@ -70,7 +70,7 @@ const EXAMPLE_TIMELINE = [
   },
 ];
 
-const LIMIT = 20;
+const LIMIT = 10;
 const WorkflowTable = ({ page, search }: { page: number; search?: string }) => {
   const [expandedRows, setExpandedRows] = useState<Record<string, boolean>>({});
   const utils = api.useUtils();
