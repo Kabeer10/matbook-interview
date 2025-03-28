@@ -25,7 +25,7 @@
 
 - [✅] Implement flowchart-based workflow editor
 - [✅] Save & retrieve workflows
-- [⛔] Execute & View Workflow
+- [⛔] Execute & View Executed Workflow
 
 ### API Integration
 
