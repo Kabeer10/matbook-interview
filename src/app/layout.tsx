@@ -19,6 +19,7 @@ const poppins = Poppins({
 });
 
 const zen = Zen_Kaku_Gothic_Antique({
+  subsets: ["latin"],
   variable: "--font-zen",
   weight: ["300", "400", "500", "700", "900"],
 });
