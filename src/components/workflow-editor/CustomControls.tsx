@@ -42,7 +42,7 @@ const CustomControls = () => {
       </button>
       <button
         onClick={handleZoomOut}
-        className="border-border border-l-2 p-[10px]"
+        className="border-border border-x-2 p-[10px]"
       >
         <Minus className="text-[#221F20]" size={12} />
       </button>
