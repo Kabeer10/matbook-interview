@@ -24,7 +24,8 @@
 ### Workflow Editor
 
 - [✅] Implement flowchart-based workflow editor
-- [✅] Save & retrieve workflows
+- [✅] Redo & Undo Functionality
+- [✅] Workflow CRUD
 - [⛔] Execute & View Executed Workflow
 
 ### API Integration
