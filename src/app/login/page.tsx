@@ -12,7 +12,7 @@ export default async function Login() {
   return (
     <section
       className="relative flex h-screen items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/login-bg.png')" }}
+      style={{ backgroundImage: "url('/images/login-bg.webp')" }}
     >
       <div className="absolute inset-0 bg-[linear-gradient(46.33deg,_rgba(33,33,33,0.839216)_0%,_rgba(66,66,66,0.239216)_178.98%)]"></div>
 
