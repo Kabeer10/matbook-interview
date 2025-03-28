@@ -17,11 +17,15 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Input } from "~/components/ui/input";
 import { Button } from "~/components/ui/button";
+import { useWorkflow } from "../WorkflowProvider";
 
 export default memo(function TextNode({ id, data }: NodeProps) {
   const [open, setOpen] = React.useState(false);
   const { setNodes, setEdges } = useReactFlow();
+  const { saveState } = useWorkflow();
+
   const handleDeleteNode = () => {
+    saveState();
     setNodes((nds) => nds.filter((node) => node.id !== id));
 
     setEdges((eds) => {

@@ -1,8 +1,7 @@
 import React, { memo } from "react";
 import { Handle, Position } from "@xyflow/react";
 
-export default memo(function EndNode({ ...props }) {
-  console.log(props);
+export default memo(function EndNode() {
   return (
     <>
       <Handle

@@ -26,12 +26,15 @@ import {
 import { Label } from "~/components/ui/label";
 import { Textarea } from "~/components/ui/textarea";
 import { Button } from "~/components/ui/button";
+import { useWorkflow } from "../WorkflowProvider";
 
 export default memo(function ApiNode({ id, data }: NodeProps) {
   const [open, setOpen] = React.useState(false);
   const { setNodes, setEdges } = useReactFlow();
+  const { saveState } = useWorkflow();
 
   const handleDeleteNode = () => {
+    saveState();
     setNodes((nds) => nds.filter((node) => node.id !== id));
 
     setEdges((eds) => {

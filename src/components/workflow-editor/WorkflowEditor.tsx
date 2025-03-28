@@ -10,6 +10,7 @@ import CustomControls from "./CustomControls";
 import SaveWorkFlow from "./SaveWorkFlow";
 import { useWorkflow } from "./WorkflowProvider";
 import TextNode from "./nodes/TextNode";
+import UndoRedoControls from "./UndoRedoControls";
 
 const edgeTypes = {
   buttonedge: ButtonEdge,
@@ -47,6 +48,7 @@ export default function WorkflowEditor() {
         <Background />
         <CustomControls />
         <SaveWorkFlow />
+        <UndoRedoControls />
       </ReactFlow>
     </div>
   );

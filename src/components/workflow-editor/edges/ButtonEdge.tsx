@@ -10,6 +10,7 @@ import { Plus } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
 import { Button } from "../../ui/button";
 import { PopoverArrow } from "@radix-ui/react-popover";
+import { useWorkflow } from "../WorkflowProvider";
 
 type NodeType = "apiNode" | "emailNode" | "textNode";
 
@@ -23,6 +24,7 @@ export default function ButtonEdge({
   markerEnd,
 }: EdgeProps) {
   const { setEdges, setNodes } = useReactFlow();
+  const { saveState } = useWorkflow();
   const [edgePath, labelX, labelY] = getStraightPath({
     sourceX,
     sourceY,
@@ -31,6 +33,7 @@ export default function ButtonEdge({
   });
 
   const addNode = (nodeType: NodeType) => {
+    saveState();
     const newNodeId = `${nodeType}-${Date.now()}`;
     const newNodeHeight = 50; // Estimated height of the new API node
     const extraSpace = newNodeHeight + 70; // Extra spacing for clarity
